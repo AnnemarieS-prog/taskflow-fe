@@ -8,7 +8,7 @@
             <span class="ml-1">{{ t('back') }}</span>
           </div>
 
-          <el-divider direction="vertical" class="!mx-4" />
+          <el-divider direction="vertical" class="mx-4!" />
         </div>
 
         <span class="text-lg font-medium">

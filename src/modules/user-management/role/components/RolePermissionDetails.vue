@@ -8,12 +8,12 @@
       <Card
         v-for="resource in resources"
         :key="resource.id"
-        class="!round !rounded-2xl !border-white"
+        class="!round rounded-2xl! border-white!"
       >
         <section class="flex justify-between">
           {{ resource.nameEn }}
         </section>
-        <Divider class="!my-2" />
+        <Divider class="my-2!" />
         <el-checkbox-group
           v-model="checkedPermissions"
           class="grid grid-cols-1 pointer-events-none"
@@ -23,7 +23,7 @@
             :key="permission.code"
             :value="permission.code"
             :label="permission.nameEn"
-            class="!mr-0"
+            class="mr-0!"
           />
         </el-checkbox-group>
       </Card>

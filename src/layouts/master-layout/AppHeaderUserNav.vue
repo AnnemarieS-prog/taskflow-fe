@@ -65,7 +65,7 @@ function handleLogout() {
           <span>{{ item.label }}</span>
           <span
             v-if="item.shortcut"
-            class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs p-1"
+            class="ml-auto border border-surface rounded-sm bg-emphasis text-muted-color text-xs p-1"
           >
             {{ item.shortcut }}
           </span>

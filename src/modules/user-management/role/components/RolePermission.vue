@@ -8,7 +8,7 @@
       <Card
         v-for="resource in resources"
         :key="resource.id"
-        class="!round !rounded-2xl !border-white"
+        class="!round rounded-2xl! border-white!"
       >
         <CheckboxGroupField
           :label="resource.nameEn"

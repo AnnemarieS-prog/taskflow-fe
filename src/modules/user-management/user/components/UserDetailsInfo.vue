@@ -1,7 +1,7 @@
 <template>
   <Card class="flex">
     <div class="p-2">
-      <UserAvatar class="!h-32 !w-32" />
+      <UserAvatar class="h-32! w-32!" />
     </div>
 
     <section class="p-4 w-auto min-w-72">

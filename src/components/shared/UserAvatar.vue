@@ -4,7 +4,7 @@
     :label="src ? undefined : getInitials(user?.displayName)"
     style="background-color: #ece9fc; color: #2a1261"
     shape="circle"
-    class="!h-10 !w-10 mr-2"
+    class="h-10! w-10! mr-2"
   />
 </template>
 

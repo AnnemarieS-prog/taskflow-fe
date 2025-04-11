@@ -1,8 +1,7 @@
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
-import autoprefixer from 'autoprefixer';
 import path from 'path';
-import tailwind from 'tailwindcss';
+import tailwindcss from '@tailwindcss/vite';
 import { defineConfig, loadEnv, UserConfig } from 'vite';
 import VueDevTools from 'vite-plugin-vue-devtools';
 
@@ -26,6 +25,7 @@ export default defineConfig(({ mode }: UserConfig) => {
       vue(),
       vueJsx(),
       VueDevTools(),
+      tailwindcss(),
     ],
     define: {
       'process.env': env,
@@ -33,11 +33,6 @@ export default defineConfig(({ mode }: UserConfig) => {
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),
-      },
-    },
-    css: {
-      postcss: {
-        plugins: [tailwind(), autoprefixer()],
       },
     },
     server: {

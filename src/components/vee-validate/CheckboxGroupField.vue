@@ -9,7 +9,7 @@
       {{ label ?? t('selectAll') }}
     </el-checkbox>
   </section>
-  <Divider class="!my-2" />
+  <Divider class="my-2!" />
 
   <el-checkbox-group v-model="value" class="grid grid-cols-1" @change="handleCheckedChange">
     <Checkbox
@@ -17,7 +17,7 @@
       :key="item[optionValueKey as string]"
       :value="item[optionValueKey as string]"
       :label="item[optionLabelKey as string]"
-      class="!mr-0"
+      class="mr-0!"
     />
   </el-checkbox-group>
 </template>

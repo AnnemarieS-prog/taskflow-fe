@@ -1,5 +1,5 @@
 <template>
-  <el-checkbox :value :label :disabled class="!mr-0" />
+  <el-checkbox :value :label :disabled class="mr-0!" />
 </template>
 
 <script setup lang="ts">
