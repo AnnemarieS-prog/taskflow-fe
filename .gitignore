@@ -29,3 +29,6 @@ coverage
 
 .env
 /.env.dev
+
+/.vscode
+/.vs

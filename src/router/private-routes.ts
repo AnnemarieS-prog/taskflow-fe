@@ -11,7 +11,7 @@ export const privateRoutes: RouteRecordRaw[] = [
       {
         path: AppRoute.DASHBOARD,
         name: AppRoute.DASHBOARD,
-        component: () => import('@/modules/dashboard/DashboardView.vue'),
+        component: () => import('@/modules/dashboard/MyDashboard.vue'),
         alias: ['/'],
         meta: { requiresAuth: true }
       },
